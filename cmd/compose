@@ -132,6 +132,7 @@ done
         echo "* Skipping Pulling Docker Images"
     else
         echo "* Pulling Docker Images"
+        export COMPOSE_TLS_VERSION=TLSv1_2
         run_compose pull
     fi
 
