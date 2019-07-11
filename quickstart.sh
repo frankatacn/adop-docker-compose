@@ -140,7 +140,8 @@ provision_aws() {
     fi
     
     if [ -z ${AWS_DOCKER_MACHINE_SIZE} ]; then
-    	export AWS_DOCKER_MACHINE_SIZE="m4.xlarge"
+    	#export AWS_DOCKER_MACHINE_SIZE="m4.xlarge"
+    	export AWS_DOCKER_MACHINE_SIZE="t2.large"  # through experimentation
     fi
 
     # Create a file with AWS parameters
